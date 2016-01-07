@@ -1,0 +1,7 @@
+key:value
+policy:MIP
+job_size_error:1
+slot_count:100
+time_slice_length:1
+solution_error:0.001
+computation_time_limit:1000

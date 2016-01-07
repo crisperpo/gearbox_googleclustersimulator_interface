@@ -1,0 +1,58 @@
+scheduler name: Some(mesos_test_sched) 
+
+0.0 ========================================================
+0.0 Mesos SIM CONSTRUCTOR - CellState total usage: 0.000000cpus (0.0%), 0.000000mem (0.0%).
+10.0
+0.0 ========================================================
+0.0 addJOB: CellState total usage: 0.000000cpus (0.0%), 0.000000mem (0.0%).
+0.0 Enqueued job 222 of workload type PrefillBatch.
+0.0 Received an offerRequest from mesos_test_sched.
+*** Simulation started, time = 0.0. ***
+0.0 ========================================================
+0.0 addJOB: CellState total usage: 0.000000cpus (0.0%), 0.000000mem (0.0%).
+0.0 Enqueued job 111 of workload type PrefillBatch.
+0.0 Received an offerRequest from mesos_test_sched.
+0.0 ========================================================
+0.0 addJOB: CellState total usage: 0.000000cpus (0.0%), 0.000000mem (0.0%).
+0.0 Enqueued job 444 of workload type PrefillBatch.
+0.0 Received an offerRequest from mesos_test_sched.
+0.0 ========================================================
+0.0 addJOB: CellState total usage: 0.000000cpus (0.0%), 0.000000mem (0.0%).
+0.0 Enqueued job 333 of workload type PrefillBatch.
+0.0 Received an offerRequest from mesos_test_sched.
+1.0 Building and sending a batched offer
+1.0 ========================================================
+1.0 TOP OF BUILD AND SEND. CellState total occupied: 0.000000cpus (0.0%), 0.000000mem (0.0%).
+1.0 mesos_test_sched's dominant share is mem (0.000000%).
+2.0 Allocator done thinking, sending offer to mesos_test_sched. Offer contains private cell state with 100.000000 cpu, 400.000000 mem available.
+2.0 ------ In mesos_test_sched.resourceOffer(offer 0).
+2.0 Recorded 201.000000 seconds of mesos_test_sched useful think time, total now: 201.000000.
+2.0 Recorded 201.000000 seconds of job 222 useful think time, total now: 201.000000.
+2.0 Setting up job 222 to accept at least part of offer 0. About to spend 201.000000 seconds scheduling it. Assigning 200 tasks to it.
+2.0 Recorded 301.000000 seconds of mesos_test_sched useful think time, total now: 502.000000.
+2.0 Recorded 301.000000 seconds of job 111 useful think time, total now: 502.000000.
+2.0 Setting up job 111 to accept at least part of offer 0. About to spend 301.000000 seconds scheduling it. Assigning 300 tasks to it.
+2.0 Recorded 201.000000 seconds of mesos_test_sched useful think time, total now: 703.000000.
+2.0 Recorded 201.000000 seconds of job 444 useful think time, total now: 703.000000.
+2.0 Setting up job 444 to accept at least part of offer 0. About to spend 201.000000 seconds scheduling it. Assigning 200 tasks to it.
+2.0 Recorded 101.000000 seconds of mesos_test_sched useful think time, total now: 804.000000.
+2.0 Recorded 101.000000 seconds of job 333 useful think time, total now: 804.000000.
+2.0 Setting up job 333 to accept at least part of offer 0. About to spend 101.000000 seconds scheduling it. Assigning 99 tasks to it.
+2.0 Job 333 is [still] only partially scheduled, (1 out of 100 its tasks remain unscheduled) so putting it back in the queue.
+2.0 After scheduling, mesos_test_sched's pending queue is empty, canceling outstanding resource request.
+2.0 Canceling the outstanding resourceRequest for scheduler mesos_test_sched.
+3.0 ========================================================
+3.0 addJOB: CellState total usage: 0.000000cpus (0.0%), 0.000000mem (0.0%).
+3.0 Enqueued job 333 of workload type PrefillBatch.
+3.0 Received an offerRequest from mesos_test_sched.
+4.0 Building and sending a batched offer
+4.0 ========================================================
+4.0 TOP OF BUILD AND SEND. CellState total occupied: 0.000000cpus (0.0%), 0.000000mem (0.0%).
+4.0 Not sending an offer after all. Only 0.000000 cpus and 0.000000 mem available in common cell state but min offer size is 100.000000 cpus and 100.000000 mem.
+806.0 Waited 804.000000 seconds of aggThinkTime, now responding to offer 0 with 799 responses after.
+806.0 ------Scheduler mesos_test_sched responded to offer 0 with 799 claimDeltas.
+806.0 ========================================================
+806.0 AFTER UNAPPLYING SAVED DELTAS
+806.0 CellState total usage: 0.000000cpus (0.0%), 0.000000mem (0.0%).
+806.0 Committing all 799 deltas that were part of response 0 
+*** Simulation finished running, time = 806.0. ***

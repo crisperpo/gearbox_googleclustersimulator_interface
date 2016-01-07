@@ -1,0 +1,6 @@
+*.o
+lib
+src/scheduler
+.cproject
+.project
+resources/example/out

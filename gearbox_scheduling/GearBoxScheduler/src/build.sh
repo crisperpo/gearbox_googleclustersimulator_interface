@@ -1,0 +1,1 @@
+g++ -I/opt/ibm/ILOG/CPLEX_Studio124/cplex/include -I/opt/ibm/ILOG/CPLEX_Studio124/concert/include -DIL_STD *.cpp -L/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/ -L/opt/ibm/ILOG/CPLEX_Studio124/concert/lib/x86-64_sles10_4.1/static_pic/ -lilocplex -lconcert -lcplex -lm -lpthread -o scheduler

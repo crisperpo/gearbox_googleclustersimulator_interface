@@ -1,0 +1,8 @@
+Build Scheduler Gearbox:
+./build.sh
+
+Run scheduler Gearbox 
+./scheduler
+
+Run Simulator
+./sbt run
